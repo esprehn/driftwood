@@ -36,36 +36,21 @@ main {
     font-family: sans-serif;
     font-weight: bold;
     text-decoration: none;
-    color: #232323;
-    font-size: 1.25em;
-    padding: 8px;
-}
-
-@keyframes loader {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loader {
-    overflow: hidden;
-    text-indent: -9999em;
-    border: 1.1em solid rgba(116,154,123, 0.2);
-    border-left: 1.1em solid #749a7b;
-    transform: translateZ(0);
-    animation: loader 1.1s infinite linear;
-}
-
-.loader {
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
+    color: #5F5F5F;
+    background-color: #BBCB75;
+    font-size: 24px;
+    border: 2px solid #0CA373;
+    padding: 4px;
+    margin: 8px;
 }
 </style>
+<link rel="import" href="components/dw-loading-spinner.html">
+
 <div class="app-shell">
     <div class="toolbar">
-        <a class="product" href="">Driftwood</a>
+        <a class="product" href="">Dw</a>
     </div>
     <main>
-        <div class="loader">Loading...</div>
+        <dw-loading-spinner></dw-loading-spinner>
     </main>
 </div>
